@@ -4182,3 +4182,196 @@
 2020-10-19 21:14:57,165:INFO:Importing libraries
 2020-10-19 21:14:57,169:INFO:plot type: lift
 2020-10-19 21:14:57,171:INFO:Copying training dataset
+2020-10-19 21:15:49,732:INFO:Initializing save_model()
+2020-10-19 21:15:49,734:INFO:save_model(model=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.5, max_depth=80,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=30, n_jobs=-1, num_leaves=10, objective=None,
+               random_state=123, reg_alpha=0.5, reg_lambda=0.7, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), model_name=Final lgbm Model 19Oct2020, model_only=False, verbose=True)
+2020-10-19 21:15:49,735:INFO:Adding model into prep_pipe
+2020-10-19 21:15:49,754:INFO:Final lgbm Model 19Oct2020.pkl saved in current working directory
+2020-10-19 21:15:49,774:INFO:Pipeline(memory=None,
+         steps=[('dtypes',
+                 DataTypes_Auto_infer(categorical_features=['Sex', 'Embarked'],
+                                      display_types=True,
+                                      features_todrop=['PassengerId', 'Name',
+                                                       'Ticket', 'Cabin'],
+                                      ml_usecase='classification',
+                                      numerical_features=[], target='Survived',
+                                      time_features=[])),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                numeric_strategy='mean',
+                                ta...
+                 LGBMClassifier(boosting_type='gbdt', class_weight=None,
+                                colsample_bytree=1.0, importance_type='split',
+                                learning_rate=0.5, max_depth=80,
+                                min_child_samples=20, min_child_weight=0.001,
+                                min_split_gain=0.1, n_estimators=30, n_jobs=-1,
+                                num_leaves=10, objective=None, random_state=123,
+                                reg_alpha=0.5, reg_lambda=0.7, silent=True,
+                                subsample=1.0, subsample_for_bin=200000,
+                                subsample_freq=0)]],
+         verbose=False)
+2020-10-19 21:15:49,779:INFO:save_model() succesfully completed......................................
+2020-10-19 21:22:25,669:INFO:Initializing interpret_model()
+2020-10-19 21:22:25,672:INFO:interpret_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.5, max_depth=80,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=30, n_jobs=-1, num_leaves=10, objective=None,
+               random_state=123, reg_alpha=0.5, reg_lambda=0.7, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), plot=summary, feature=None, observation=None)
+2020-10-19 21:22:25,674:INFO:Checking exceptions
+2020-10-19 21:22:25,677:ERROR:shap library not found. pip install shap to use interpret_model function.
+2020-10-19 21:24:17,051:INFO:Initializing interpret_model()
+2020-10-19 21:24:17,054:INFO:interpret_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.5, max_depth=80,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.1,
+               n_estimators=30, n_jobs=-1, num_leaves=10, objective=None,
+               random_state=123, reg_alpha=0.5, reg_lambda=0.7, silent=True,
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), plot=summary, feature=None, observation=None)
+2020-10-19 21:24:17,057:INFO:Checking exceptions
+2020-10-19 21:24:17,355:INFO:Importing libraries
+2020-10-19 21:24:17,358:INFO:plot type: summary
+2020-10-19 21:24:17,359:INFO:model type detected: type 1
+2020-10-19 21:24:17,360:INFO:Creating TreeExplainer
+2020-10-19 21:24:17,381:INFO:Compiling shap values
+2020-10-19 21:24:18,057:INFO:Visual Rendered Successfully
+2020-10-19 21:24:18,059:INFO:interpret_model() succesfully completed......................................
+2020-10-19 21:27:47,929:INFO:Initializing create_model()
+2020-10-19 21:27:47,931:INFO:create_model(estimator=xgboost, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=True, system=True)
+2020-10-19 21:27:47,933:INFO:Checking exceptions
+2020-10-19 21:27:47,934:INFO:Preloading libraries
+2020-10-19 21:27:47,935:INFO:Preparing display monitor
+2020-10-19 21:27:47,977:INFO:Copying training dataset
+2020-10-19 21:27:47,979:INFO:Importing libraries
+2020-10-19 21:27:47,981:INFO:Defining folds
+2020-10-19 21:27:47,983:INFO:Declaring metric variables
+2020-10-19 21:27:47,996:INFO:Importing untrained model
+2020-10-19 21:27:47,997:INFO:Extreme Gradient Boosting Imported succesfully
+2020-10-19 21:27:47,999:INFO:Checking ensemble method
+2020-10-19 21:27:48,008:INFO:Initializing Fold 1
+2020-10-19 21:27:48,016:INFO:Fitting Model
+2020-10-19 21:27:48,109:INFO:Evaluating Metrics
+2020-10-19 21:27:48,132:INFO:Compiling Metrics
+2020-10-19 21:27:48,176:INFO:Initializing Fold 2
+2020-10-19 21:27:48,189:INFO:Fitting Model
+2020-10-19 21:27:48,282:INFO:Evaluating Metrics
+2020-10-19 21:27:48,308:INFO:Compiling Metrics
+2020-10-19 21:27:48,353:INFO:Initializing Fold 3
+2020-10-19 21:27:48,370:INFO:Fitting Model
+2020-10-19 21:27:48,458:INFO:Evaluating Metrics
+2020-10-19 21:27:48,482:INFO:Compiling Metrics
+2020-10-19 21:27:48,524:INFO:Initializing Fold 4
+2020-10-19 21:27:48,543:INFO:Fitting Model
+2020-10-19 21:27:48,643:INFO:Evaluating Metrics
+2020-10-19 21:27:48,665:INFO:Compiling Metrics
+2020-10-19 21:27:48,708:INFO:Initializing Fold 5
+2020-10-19 21:27:48,725:INFO:Fitting Model
+2020-10-19 21:27:48,826:INFO:Evaluating Metrics
+2020-10-19 21:27:48,847:INFO:Compiling Metrics
+2020-10-19 21:27:48,892:INFO:Initializing Fold 6
+2020-10-19 21:27:48,908:INFO:Fitting Model
+2020-10-19 21:27:49,010:INFO:Evaluating Metrics
+2020-10-19 21:27:49,031:INFO:Compiling Metrics
+2020-10-19 21:27:49,082:INFO:Initializing Fold 7
+2020-10-19 21:27:49,099:INFO:Fitting Model
+2020-10-19 21:27:49,210:INFO:Evaluating Metrics
+2020-10-19 21:27:49,232:INFO:Compiling Metrics
+2020-10-19 21:27:49,286:INFO:Initializing Fold 8
+2020-10-19 21:27:49,303:INFO:Fitting Model
+2020-10-19 21:27:49,408:INFO:Evaluating Metrics
+2020-10-19 21:27:49,429:INFO:Compiling Metrics
+2020-10-19 21:27:49,477:INFO:Initializing Fold 9
+2020-10-19 21:27:49,491:INFO:Fitting Model
+2020-10-19 21:27:49,598:INFO:Evaluating Metrics
+2020-10-19 21:27:49,618:INFO:Compiling Metrics
+2020-10-19 21:27:49,668:INFO:Initializing Fold 10
+2020-10-19 21:27:49,682:INFO:Fitting Model
+2020-10-19 21:27:49,784:INFO:Evaluating Metrics
+2020-10-19 21:27:49,805:INFO:Compiling Metrics
+2020-10-19 21:27:49,854:INFO:Calculating mean and std
+2020-10-19 21:27:49,861:INFO:Creating metrics dataframe
+2020-10-19 21:27:49,883:INFO:Finalizing model
+2020-10-19 21:27:49,996:INFO:Uploading results into container
+2020-10-19 21:27:49,998:INFO:Uploading model into container now
+2020-10-19 21:27:50,053:INFO:create_model_container: 4
+2020-10-19 21:27:50,055:INFO:master_model_container: 4
+2020-10-19 21:27:50,056:INFO:display_container: 5
+2020-10-19 21:27:50,065:INFO:XGBClassifier(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+              colsample_bynode=1, colsample_bytree=1, gamma=0, gpu_id=-1,
+              importance_type='gain', interaction_constraints='',
+              learning_rate=0.300000012, max_delta_step=0, max_depth=6,
+              min_child_weight=1, missing=nan, monotone_constraints='()',
+              n_estimators=100, n_jobs=-1, num_parallel_tree=1,
+              objective='binary:logistic', random_state=123, reg_alpha=0,
+              reg_lambda=1, scale_pos_weight=1, subsample=1,
+              tree_method='exact', validate_parameters=1, verbosity=0)
+2020-10-19 21:27:50,067:INFO:create_model() succesfully completed......................................
+2020-10-19 21:27:50,069:INFO:Initializing create_model()
+2020-10-19 21:27:50,071:INFO:create_model(estimator=lr, ensemble=False, method=None, fold=10, round=4, cross_validation=True, verbose=True, system=True)
+2020-10-19 21:27:50,073:INFO:Checking exceptions
+2020-10-19 21:27:50,075:INFO:Preloading libraries
+2020-10-19 21:27:50,077:INFO:Preparing display monitor
+2020-10-19 21:27:50,125:INFO:Copying training dataset
+2020-10-19 21:27:50,127:INFO:Importing libraries
+2020-10-19 21:27:50,131:INFO:Defining folds
+2020-10-19 21:27:50,135:INFO:Declaring metric variables
+2020-10-19 21:27:50,149:INFO:Importing untrained model
+2020-10-19 21:27:50,151:INFO:Logistic Regression Imported succesfully
+2020-10-19 21:27:50,153:INFO:Checking ensemble method
+2020-10-19 21:27:50,167:INFO:Initializing Fold 1
+2020-10-19 21:27:50,182:INFO:Fitting Model
+2020-10-19 21:27:50,287:INFO:Evaluating Metrics
+2020-10-19 21:27:50,304:INFO:Compiling Metrics
+2020-10-19 21:27:50,339:INFO:Initializing Fold 2
+2020-10-19 21:27:50,353:INFO:Fitting Model
+2020-10-19 21:27:50,457:INFO:Evaluating Metrics
+2020-10-19 21:27:50,475:INFO:Compiling Metrics
+2020-10-19 21:27:50,511:INFO:Initializing Fold 3
+2020-10-19 21:27:50,524:INFO:Fitting Model
+2020-10-19 21:27:50,614:INFO:Evaluating Metrics
+2020-10-19 21:27:50,627:INFO:Compiling Metrics
+2020-10-19 21:27:50,664:INFO:Initializing Fold 4
+2020-10-19 21:27:50,676:INFO:Fitting Model
+2020-10-19 21:27:50,766:INFO:Evaluating Metrics
+2020-10-19 21:27:50,790:INFO:Compiling Metrics
+2020-10-19 21:27:50,833:INFO:Initializing Fold 5
+2020-10-19 21:27:50,845:INFO:Fitting Model
+2020-10-19 21:27:50,961:INFO:Evaluating Metrics
+2020-10-19 21:27:50,989:INFO:Compiling Metrics
+2020-10-19 21:27:51,031:INFO:Initializing Fold 6
+2020-10-19 21:27:51,041:INFO:Fitting Model
+2020-10-19 21:27:51,159:INFO:Evaluating Metrics
+2020-10-19 21:27:51,189:INFO:Compiling Metrics
+2020-10-19 21:27:51,252:INFO:Initializing Fold 7
+2020-10-19 21:27:51,271:INFO:Fitting Model
+2020-10-19 21:27:51,414:INFO:Evaluating Metrics
+2020-10-19 21:27:51,439:INFO:Compiling Metrics
+2020-10-19 21:27:51,498:INFO:Initializing Fold 8
+2020-10-19 21:27:51,517:INFO:Fitting Model
+2020-10-19 21:27:51,639:INFO:Evaluating Metrics
+2020-10-19 21:27:51,672:INFO:Compiling Metrics
+2020-10-19 21:27:51,731:INFO:Initializing Fold 9
+2020-10-19 21:27:51,749:INFO:Fitting Model
+2020-10-19 21:27:51,889:INFO:Evaluating Metrics
+2020-10-19 21:27:51,920:INFO:Compiling Metrics
+2020-10-19 21:27:51,981:INFO:Initializing Fold 10
+2020-10-19 21:27:51,996:INFO:Fitting Model
+2020-10-19 21:27:52,126:INFO:Evaluating Metrics
+2020-10-19 21:27:52,154:INFO:Compiling Metrics
+2020-10-19 21:27:52,211:INFO:Calculating mean and std
+2020-10-19 21:27:52,216:INFO:Creating metrics dataframe
+2020-10-19 21:27:52,243:INFO:Finalizing model
+2020-10-19 21:27:52,378:INFO:Uploading results into container
+2020-10-19 21:27:52,380:INFO:Uploading model into container now
+2020-10-19 21:27:52,441:INFO:create_model_container: 5
+2020-10-19 21:27:52,444:INFO:master_model_container: 5
+2020-10-19 21:27:52,446:INFO:display_container: 6
+2020-10-19 21:27:52,450:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2020-10-19 21:27:52,452:INFO:create_model() succesfully completed......................................
